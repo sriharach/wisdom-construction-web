@@ -11,7 +11,7 @@ import { ResponseHouse } from '@/types/models/house';
 
 const useHouseAchievements = () => {
   const searchParams = useSearchParams();
-  const hieHouseID = searchParams.get('hiehouse-id');
+  const houseID = searchParams.get('house-id');
 
   const [showGallery, setShowGallery] = useState(0);
   const [openShowGallery, setOpenShowGallery] = useState(false);
@@ -21,7 +21,7 @@ const useHouseAchievements = () => {
     data: houseDataOnce,
     isError: houseDataError,
     isLoading: houseDataLoading,
-  } = useQueryGetHouseFetchOnce<TResponse<ResponseHouse>>(String(hieHouseID));
+  } = useQueryGetHouseFetchOnce<TResponse<ResponseHouse>>(String(houseID));
 
   return {
     houseDataOnce: houseDataOnce?.data,

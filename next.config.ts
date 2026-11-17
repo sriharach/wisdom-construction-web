@@ -4,8 +4,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  basePath: '/construction',
   env: {
-    API_URL: isProduction ? process.env.API_PRODUCTION_URL : process.env.API_URL || 'http://localhost:8000/api',
+    API_URL: isProduction ? process.env.API_URL : 'http://localhost:8000/api',
     AMOUNT_LIMIT_IMAGE: process.env.AMOUNT_LIMIT_IMAGE,
     CLIENT_WEB: isProduction ? process.env.CLIENT_WEB : 'http://localhost:3000'
   },

@@ -27,7 +27,7 @@ const Preface = () => {
             <img
               draggable={false}
               onContextMenu={(e) => e.preventDefault()}
-              src="/images/close-up-couple-taking-notes_.webp"
+              src="/construction/images/close-up-couple-taking-notes.webp"
               className="w-full h-full md:w-[400px] md:h-[300px] rounded-xl"
               alt=""
             />

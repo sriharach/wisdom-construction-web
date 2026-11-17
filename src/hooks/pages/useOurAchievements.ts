@@ -1,5 +1,6 @@
 // libs
 import { useEffect, useMemo, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 // hook
 import { useQueryGetCategory } from '@/hooks/useQuery/useQueryGetCategory';
@@ -14,6 +15,7 @@ import useResponsiveSize from '../useResponsiveSize';
 
 const useOurAchievements = () => {
   const {width} = useResponsiveSize();
+  const pathname = usePathname();
 
   // hook state
   const [categoryID, setCategoryID] = useState('');
@@ -60,15 +62,15 @@ const useOurAchievements = () => {
         ...category,
         img_preview:
           category.name === 'บ้านเดี่ยว'
-            ? '/images/detached_house_preview.webp'
+            ? '/construction/images/detached_house_preview.webp'
             : category.name === 'ทาวน์โฮม'
-              ? '/images/townhome_preview.webp'
+              ? '/construction/images/townhome_preview.webp'
               : category.name === 'บ้านแฝด'
-                ? '/images/twinhome_preview.webp'
+                ? '/construction/images/twinhome_preview.webp'
                 : category.name === 'อาคารพาณิชย์'
-                  ? '/images/commercial_building_preview.webp'
+                  ? '/construction/images/commercial_building_preview.webp'
                   : category.name === 'คอนโด'
-                    ? '/images/condo_preview.webp'
+                    ? '/construction/images/condo_preview.webp'
                     : undefined,
       }));
     }
@@ -95,8 +97,8 @@ const useOurAchievements = () => {
 
   const handleClickHouseAchievements = (house_id: string) => {
     const url = new URLSearchParams();
-    url.set('hiehouse-id', house_id);
-    return window.document.location.pathname + '/house?' + url.toString();
+    url.set('house-id', house_id);
+    return pathname + '/house?' + url.toString();
   };
 
   const handleChangePage = (page: number) => {

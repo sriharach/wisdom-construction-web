@@ -12,14 +12,14 @@ const Reviewer = () => {
         <div className="relative flex flex-row flex-wrap justify-center gap-4 md:gap-12 md:px-12">
           <img
             draggable={false}
-            src="/S__38232068_.webp"
+            src="/construction/S__38232068.webp"
             className=" md:h-[560px] w-full md:w-[400px] rounded-xl object-cover"
             alt=""
             onContextMenu={(e) => e.preventDefault()}
           />
           <img
             draggable={false}
-            src="/S__38232070_.webp"
+            src="/construction/S__38232070.webp"
             className=" md:h-[560px] w-full md:w-[400px] rounded-xl object-cover"
             alt=""
             onContextMenu={(e) => e.preventDefault()}

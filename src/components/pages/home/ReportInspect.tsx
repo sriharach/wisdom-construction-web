@@ -17,7 +17,7 @@ const ReportInspect = () => {
       className="relative bg-black w-full h-full flex flex-col md:flex-row justify-center items-center py-12 px-12 shrink"
     >
       <img
-        src="/images/inspect-board.webp"
+        src="/construction/images/inspect-board.webp"
         className="absolute opacity-35 z-10 top-0 left-0 w-full h-full object-cover"
         alt=""
       />

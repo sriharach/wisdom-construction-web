@@ -15,7 +15,7 @@ const Footer = () => {
       <div className={styles['footer-wrapper-box']}>
         <div className={styles['footer-width-grap']}>
           <div className="flex flex-row grow items-center">
-            <img draggable={false} onContextMenu={(e) => e.preventDefault()} src="/wisdom_logo_.webp" className="w-[100px] md:w-[200px] h-full" alt="" />
+            <img draggable={false} onContextMenu={(e) => e.preventDefault()} src="/construction/wisdom_logo.webp" className="w-[100px] md:w-[200px] h-full" alt="" />
             <span className="text-xl md:text-3xl font-medium shrink">Wisdom construction assistants</span>
           </div>
           <span className="text-center text-xl md:text-3xl font-medium">ติดต่อเรา</span>

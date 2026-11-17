@@ -2,7 +2,7 @@
     @apply flex-1 -mt-14;
 
     &-background {
-        @apply relative bg-[url(/images/roofs-small-blue-yellow-houses-with-copyspace-sky.webp)] bg-bottom bg-cover h-[340px] md:h-[480px] xl:h-[600px] w-full;
+        @apply relative bg-[url(/construction/images/roofs-small-blue-yellow-houses-with-copyspace-sky.webp)] bg-bottom bg-cover h-[340px] md:h-[480px] xl:h-[600px] w-full;
     }
 
     &-filter-color {
@@ -14,6 +14,6 @@
     }
 
     &-wisdom-landing-page {
-        @apply relative bg-[url(/images/wisdom_landing_page.webp)] bg-center bg-cover md:bg-cover h-[340px] md:h-[480px] xl:h-[600px] w-full;
+        @apply relative bg-[url(/construction/images/wisdom_landing_page.webp)] bg-center bg-cover md:bg-cover h-[340px] md:h-[480px] xl:h-[600px] w-full;
     }
 }

@@ -43,7 +43,7 @@ const About = () => {
                 <img
                   draggable={false}
                   onContextMenu={(e) => e.preventDefault()}
-                  src="/images/male-worker-writing-clipboard_.webp"
+                  src="/construction/images/male-worker-writing-clipboard.webp"
                   className="w-full h-full md:w-[400px] md:h-[300px] rounded-xl"
                   alt=""
                 />
